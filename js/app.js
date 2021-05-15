@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // TODO: we can also get the grid size from user
+  // declarations
   const GRID_WIDTH = 10
   const GRID_HEIGHT = 20
   const GRID_SIZE = GRID_WIDTH * GRID_HEIGHT
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // no need to type 200 divs :)
   const grid = createGrid();
   let squares = Array.from(grid.querySelectorAll('div'))
-  const startBtn = document.querySelector('.button')
+  const startBtn = document.querySelector('#start')
   const hamburgerBtn = document.querySelector('.toggler')
   const menu = document.querySelector('.menu')
   const span = document.getElementsByClassName('close')[0]
@@ -54,6 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
     return grid;
   }
 
+// move click
+document.getElementById('left').onclick = function() {
+  moveleft()
+}
+
+document.getElementById('right').onclick = function() {
+  moveright()
+}
+
+document.getElementById('up').onclick = function() {
+  rotate()
+}
+
+document.getElementById('down').onclick = function() {
+  moveDown()
+}
 
   //assign functions to keycodes
   function control(e) {

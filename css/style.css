@@ -142,6 +142,40 @@ div {
     0 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+#left, #right, #up, #down {
+  width: 12rem;
+  height: 2.2rem;
+  background-color: #0E4180;
+  background-image: linear-gradient(to bottom, #23538E, #0E4180);
+  border: 1px solid #23538E;
+  text-shadow: -1px -1px 0 #23538E;
+  box-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.5) inset,
+  0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 #23538E,
+  0 4px 2px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  border-radius: 25px;
+
+}
+
+.move {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  align-items: center;
+  text-align: center;
+  width: 10.5rem;
+  height: 5rem;
+}
+
+.move1, .move2 {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
 .button:before {
   background: #f0f0f0;
   background-image: linear-gradient(#d0d0d0, #f0f0f0);
