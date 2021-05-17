@@ -14,8 +14,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   margin: auto;
-  max-width: 468px;
-  height: 88vh;
+  /* max-width: 468px; */
+  max-width: 375px;
+  /* max-height: 100vh; */
   color: #d8edea;
   background: radial-gradient(
     circle,
@@ -72,7 +73,7 @@ div {
 
 .game {
   height: 0;
-  width: 300px;
+  width: 280px;
 }
 
 .grid {
@@ -131,7 +132,7 @@ div {
   line-height: 23px;
   font-size: 10px;
   display: block;
-  margin: 30px;
+  margin: 0px 30px 15px 30px;
   text-shadow: -1px -1px 0 #a84155;
   background: #d25068;
   border: 1px solid #d25068;
