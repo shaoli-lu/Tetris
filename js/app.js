@@ -274,11 +274,11 @@ document.getElementById('down').onclick = function() {
   }
 
   //Styling eventListeners
-  hamburgerBtn.addEventListener('click', () => {
+/*   hamburgerBtn.addEventListener('click', () => {
     menu.style.display = 'flex'
   })
   span.addEventListener('click', () => {
     menu.style.display = 'none'
-  })
+  }) */
 
 })
